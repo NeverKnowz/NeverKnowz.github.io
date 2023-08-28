@@ -1,85 +1,96 @@
-<script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
+<script>
+import feather from 'feather-icons'
+import AppHeader from './components/shared/AppHeader.vue'
+import AppFooter from './components/shared/AppFooter.vue'
+
+export default {
+  components: {
+    AppHeader,
+    AppFooter
+  },
+  data: () => {
+    return {
+      appTheme: localStorage.getItem('theme')
+    }
+  },
+  mounted() {
+    feather.replace()
+  },
+  updated() {
+    feather.replace()
+  }
+}
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <div :class="appTheme" class="pt-0.5">
+    <!-- App header -->
+    <AppHeader />
 
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+    <!-- Render active component contents with vue transition -->
+    <transition name="fade" mode="out-in">
+      <router-view :theme="appTheme" />
+    </transition>
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
-    </div>
-  </header>
+    <!-- Scroll to top -->
+    <back-to-top visibleoffset="500" right="30px" bottom="20px" class="shadow-lg">
+      <i data-feather="chevron-up"></i>
+    </back-to-top>
 
-  <RouterView />
+    <!-- App footer -->
+    <AppFooter />
+  </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
-}
-
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
-}
-
-nav {
-  width: 100%;
-  font-size: 12px;
+<style>
+#app {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  margin-top: 2rem;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.vue-back-to-top {
+  @apply p-2 bg-indigo-500 hover:bg-indigo-600 text-white transition
+        duration-500
+        ease-in-out
+        transform
+        hover:-translate-y-1 hover:scale-110;
+  border-radius: 50%;
+  font-size: 22px;
+  line-height: 22px;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.fade-enter-active {
+  animation: coming 0.4s;
+  animation-delay: 0.2s;
+  opacity: 0;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+.fade-leave-active {
+  animation: going 0.4s;
 }
 
-nav a:first-of-type {
-  border: 0;
-}
-
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
+@keyframes going {
+  from {
+    transform: translateX(0);
   }
 
-  .logo {
-    margin: 0 2rem 0 0;
+  to {
+    transform: translateX(-10px);
+    opacity: 0;
+  }
+}
+
+@keyframes coming {
+  from {
+    transform: translateX(-10px);
+    opacity: 0;
   }
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
+  to {
+    transform: translateX(0px);
+    opacity: 1;
   }
 }
 </style>
