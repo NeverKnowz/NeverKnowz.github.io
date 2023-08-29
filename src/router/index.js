@@ -66,7 +66,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "projects" */ '../views/HighSpeedInternet.vue'
+        /* webpackChunkName: "projects" */ '../components/projects/HighSpeedInternet.vue'
       ),
     meta: {
       title: 'Brady - HighSpeedInternet'
@@ -80,7 +80,7 @@ const routes = [
     // which is lazy-loaded when the route is visited.
     component: () =>
       import(
-        /* webpackChunkName: "projects" */ '../views/HighSpeedInternet.vue'
+        /* webpackChunkName: "projects" */ '../components/projects/HighSpeedInternet.vue'
       ),
     meta: {
       title: 'Brady - KvCore'

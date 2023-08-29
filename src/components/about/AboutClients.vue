@@ -1,5 +1,10 @@
 <script>
 import AboutClientSingle from './AboutClientSingle.vue'
+import awsLogo from '@/assets/images/brands/aws-logo.svg'
+import twilioLogo from '@/assets/images/brands/twilio.png'
+import hsiLogo from '@/assets/images/brands/hsi-logo-wide.png'
+import dockerLogo from '@/assets/images/brands/docker.png'
+import atlassianLogo from '@/assets/images/brands/atlassianLogo.png'
 
 export default {
   components: {
@@ -12,27 +17,27 @@ export default {
         {
           id: 1,
           title: 'AWS',
-          img: import('@/assets/images/brands/aws-logo.svg')
+          img: awsLogo
         },
         {
           id: 2,
           title: 'Twilio',
-          img: import('@/assets/images/brands/twilio.png')
+          img: twilioLogo
         },
         {
           id: 3,
           title: 'HighSpeedInternet.com',
-          img: import('@/assets/images/brands/hsi-logo-wide.png')
+          img: hsiLogo
         },
         {
           id: 4,
           title: 'Docker',
-          img: import('@/assets/images/brands/hsi-logo-wide.png')
+          img: dockerLogo
         },
         {
           id: 5,
           title: 'Atlassian Products',
-          img: import('@/assets/images/brands/hsi-logo-wide.png')
+          img: atlassianLogo
         }
       ]
     }
