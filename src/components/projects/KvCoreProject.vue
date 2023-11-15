@@ -5,9 +5,9 @@ import ProjectGallery from './ProjectGallery.vue'
 import ProjectInfo from './ProjectInfo.vue'
 import ProjectRelatedProjects from './ProjectRelatedProjects.vue'
 
-import hsiHero from '@/assets/images/hsi-hero.png'
-import hsiMap from '@/assets/images/hsi-map-demo.png'
-import hsiDemo from '@/assets/images/hsi-demo-1.png'
+import kvCore1 from '@/assets/images/KvCore-1.png'
+import kvCore2 from '@/assets/images/Kv-Core-2.png'
+import kvCoreLogin from '@/assets/images/kvcore-login.png'
 import otherProject1 from '@/assets/images/mobile-project-1.jpg'
 import otherProject2 from '@/assets/images/web-project-1.jpg'
 import otherProject3 from '@/assets/images/ui-project-2.jpg'
@@ -31,18 +31,18 @@ export default {
       projectImages: [
         {
           id: 1,
-          title: 'Zapier Integration',
-          img: hsiHero
+          title: 'MLS Listings',
+          img: kvCore1
         },
         {
           id: 2,
-          title: 'ProductBoost',
-          img: hsiMap
+          title: 'Marketplace products',
+          img: kvCore2
         },
         {
           id: 3,
-          title: 'Core Concierge',
-          img: hsiDemo
+          title: 'KvCore login',
+          img: kvCoreLogin
         }
       ],
       projectInfo: {
