@@ -72,11 +72,21 @@ export default {
         objectivesHeading: 'Objective',
         objectivesDetails:
           'I joined the marketplace engineering team.  Our responsibilities revolve around upkeeping and designing products' +
-            'for our CRM customers.',
+          'for our CRM customers.',
         technologies: [
           {
             title: 'Tools & Technologies',
-            techs: ['HTML', 'CSS', 'JavaScript', 'Vue.js', 'REST API', 'AWS', 'Laravel', 'Docker', 'NUXT']
+            techs: [
+              'HTML',
+              'CSS',
+              'JavaScript',
+              'Vue.js',
+              'REST API',
+              'AWS',
+              'Laravel',
+              'Docker',
+              'NUXT'
+            ]
           }
         ],
         projectDetailsHeading: 'Challenge',
@@ -85,26 +95,26 @@ export default {
             id: 1,
             details:
               'The codebase is mature and has been touched by many developers over the years. While robust, understanding' +
-                'it in it\'s entirety is a challenge. Along with that, working directly in a customer facing environment' +
-                'has been a learning experience.  In the past, letting more technical issues bubble up to the top was ' +
-                'less of a problem since it would just end up in the org instead of the hands of a customer that will' +
-                'report it an an issue and potentially cost a subscription.',
+              "it in it's entirety is a challenge. Along with that, working directly in a customer facing environment" +
+              'has been a learning experience.  In the past, letting more technical issues bubble up to the top was ' +
+              'less of a problem since it would just end up in the org instead of the hands of a customer that will' +
+              'report it an an issue and potentially cost a subscription.'
           },
           {
             id: 2,
             details:
               'The number of products is not substantial, but each is unique in special ways, and the data structure has been' +
-                'especially challenging.',
+              'especially challenging.'
           },
           {
             id: 3,
             details:
-              'The other major issue, was how long it took to update that "availability" information. The old process required',
+              'The other major issue, was how long it took to update that "availability" information. The old process required'
           },
           {
             id: 4,
             details:
-              'In the end, the ability to update the data themselves resulted in dozens of new partnerships, leading to ',
+              'In the end, the ability to update the data themselves resulted in dozens of new partnerships, leading to '
           }
         ],
         socialSharingsHeading: 'Share This',
