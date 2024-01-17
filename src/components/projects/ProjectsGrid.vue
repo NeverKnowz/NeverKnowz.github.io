@@ -1,11 +1,10 @@
 <script>
 import feather from 'feather-icons'
-import ProjectsFilter from './ProjectsFilter.vue'
 import ProjectSingle from './ProjectSingle.vue'
 import projects from '../../data/projects'
 
 export default {
-  components: { ProjectSingle, ProjectsFilter },
+  components: { ProjectSingle },
   data: () => {
     return {
       projects,
@@ -85,7 +84,6 @@ export default {
             aria-label="Name"
           />
         </div>
-        <ProjectsFilter @filter="selectedCategory = $event" />
       </div>
     </div>
 

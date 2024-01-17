@@ -13,17 +13,17 @@ export default {
       contacts: [
         {
           id: 1,
-          name: 'Your Address, Your City, Your Country',
+          name: 'Salt Lake City, Utah',
           icon: 'map-pin'
         },
         {
           id: 2,
-          name: 'email@domain.com',
+          name: 'Bradyhession@gmail.com',
           icon: 'mail'
         },
         {
           id: 3,
-          name: '555 8888 888',
+          name: '385 414 5721',
           icon: 'phone'
         }
       ]
