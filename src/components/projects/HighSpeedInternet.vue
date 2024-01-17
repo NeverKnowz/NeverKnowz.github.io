@@ -3,15 +3,10 @@ import feather from 'feather-icons'
 import ProjectHeader from './ProjectHeader.vue'
 import ProjectGallery from './ProjectGallery.vue'
 import ProjectInfo from './ProjectInfo.vue'
-import ProjectRelatedProjects from './ProjectRelatedProjects.vue'
 
 import hsiHero from '@/assets/images/hsi-hero.png'
 import hsiMap from '@/assets/images/hsi-map-demo.png'
 import hsiDemo from '@/assets/images/hsi-demo-1.png'
-import otherProject1 from '@/assets/images/mobile-project-1.jpg'
-import otherProject2 from '@/assets/images/web-project-1.jpg'
-import otherProject3 from '@/assets/images/ui-project-2.jpg'
-import otherProject4 from '@/assets/images/mobile-project-2.jpg'
 
 export default {
   name: 'his-project',
@@ -19,7 +14,6 @@ export default {
     ProjectHeader,
     ProjectGallery,
     ProjectInfo,
-    ProjectRelatedProjects
   },
   data: () => {
     return {
@@ -163,31 +157,6 @@ export default {
           }
         ]
       },
-      relatedProject: {
-        relatedProjectsHeading: 'Related Projects',
-        relatedProjects: [
-          {
-            id: 1,
-            title: 'Mobile UI',
-            img: otherProject1
-          },
-          {
-            id: 2,
-            title: 'Web Application',
-            img: otherProject2
-          },
-          {
-            id: 3,
-            title: 'UI Design',
-            img: otherProject3
-          },
-          {
-            id: 4,
-            title: 'Kabul Mobile App UI',
-            img: otherProject4
-          }
-        ]
-      }
     }
   },
   mounted() {
@@ -210,9 +179,6 @@ export default {
 
     <!-- Project information -->
     <ProjectInfo :projectInfo="projectInfo" />
-
-    <!-- Project related projects -->
-    <ProjectRelatedProjects :relatedProject="relatedProject" />
   </div>
 </template>
 

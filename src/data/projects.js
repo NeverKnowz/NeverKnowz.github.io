@@ -29,14 +29,14 @@ const projects = [
     id: 4,
     title: 'Game Jam',
     category: 'Game Development',
-    route: '/projects/-project/game-jam',
+    route: '/projects/game-jam',
     img: blackhole
   },
   {
     id: 5,
     title: 'Eagle Scout',
     category: 'Earned 2012',
-    route: '/projects/single-project/eagle-scout',
+    route: '/projects/eagle-scout',
     img: eagle
   }
 ]

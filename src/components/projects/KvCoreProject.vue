@@ -3,15 +3,10 @@ import feather from 'feather-icons'
 import ProjectHeader from './ProjectHeader.vue'
 import ProjectGallery from './ProjectGallery.vue'
 import ProjectInfo from './ProjectInfo.vue'
-import ProjectRelatedProjects from './ProjectRelatedProjects.vue'
 
 import kvCore1 from '@/assets/images/KvCore-1.png'
 import kvCore2 from '@/assets/images/Kv-Core-2.png'
 import kvCoreLogin from '@/assets/images/kvcore-login.png'
-import otherProject1 from '@/assets/images/mobile-project-1.jpg'
-import otherProject2 from '@/assets/images/web-project-1.jpg'
-import otherProject3 from '@/assets/images/ui-project-2.jpg'
-import otherProject4 from '@/assets/images/mobile-project-2.jpg'
 
 export default {
   name: 'kvcore-project',
@@ -19,7 +14,6 @@ export default {
     ProjectHeader,
     ProjectGallery,
     ProjectInfo,
-    ProjectRelatedProjects
   },
   data: () => {
     return {
@@ -104,7 +98,7 @@ export default {
             id: 2,
             details:
               'The number of products is not substantial, but each is unique in special ways, and the data structure has been' +
-              'especially challenging.  More than anything, it has reall stretched my full-stack claims.  Asking some front' +
+              'especially challenging.  More than anything, it has really stretched my full-stack claims.  Asking some front' +
               'end work one moment, back end work another, and then having a myriad of low level docker and environment issues' +
               'to solve. All having a deadline and paying customers as the end users.'
           },
@@ -120,8 +114,12 @@ export default {
           {
             id: 4,
             details:
-              'Thus far, IRE has been a challenging, but rewarding place to work.  Great co-workers and great attention paid to ' +
-              'things like the ticketing process are apreciated.'
+            'In the end, my time at IRE came to an end in a familiar story, the position I was filling was closed. It was ' +
+              'an interesting place to work for sure, but I was able to focus on a lot of front end work, and lead some' +
+              'cool initiatives. The storyblok CMS I mentioned earlier was spearheaded by me, and after some learning time' +
+              'on my end, I was able to teach other devs to contribute to it as well.  Leading the charge on my team to dockerize' +
+              'our local environments was a fun hurdle as well.  Lots of interdependent systems that made me have to really' +
+              'dig into docker at a lower level than usual.',
           }
         ],
         socialSharingsHeading: 'Share This',
@@ -158,31 +156,6 @@ export default {
           }
         ]
       },
-      relatedProject: {
-        relatedProjectsHeading: 'Related Projects',
-        relatedProjects: [
-          {
-            id: 1,
-            title: 'Mobile UI',
-            img: otherProject1
-          },
-          {
-            id: 2,
-            title: 'Web Application',
-            img: otherProject2
-          },
-          {
-            id: 3,
-            title: 'UI Design',
-            img: otherProject3
-          },
-          {
-            id: 4,
-            title: 'Kabul Mobile App UI',
-            img: otherProject4
-          }
-        ]
-      }
     }
   },
   mounted() {
@@ -205,9 +178,6 @@ export default {
 
     <!-- Project information -->
     <ProjectInfo :projectInfo="projectInfo" />
-
-    <!-- Project related projects -->
-    <ProjectRelatedProjects :relatedProject="relatedProject" />
   </div>
 </template>
 

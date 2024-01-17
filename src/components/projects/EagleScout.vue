@@ -3,15 +3,10 @@ import feather from 'feather-icons'
 import ProjectHeader from './ProjectHeader.vue'
 import ProjectGallery from './ProjectGallery.vue'
 import ProjectInfo from './ProjectInfo.vue'
-import ProjectRelatedProjects from './ProjectRelatedProjects.vue'
 
-import kvCore1 from '@/assets/images/KvCore-1.png'
-import kvCore2 from '@/assets/images/Kv-Core-2.png'
-import kvCoreLogin from '@/assets/images/kvcore-login.png'
-import otherProject1 from '@/assets/images/mobile-project-1.jpg'
-import otherProject2 from '@/assets/images/web-project-1.jpg'
-import otherProject3 from '@/assets/images/ui-project-2.jpg'
-import otherProject4 from '@/assets/images/mobile-project-2.jpg'
+import eagleScout from '@/assets/images/eagle-scout.png'
+import eagleScout2 from '@/assets/images/EagleScout.jpg'
+import eagleScout3 from '@/assets/images/eagle-scout-3.jpg'
 
 export default {
   name: 'eagle-scout-project',
@@ -19,30 +14,29 @@ export default {
     ProjectHeader,
     ProjectGallery,
     ProjectInfo,
-    ProjectRelatedProjects
   },
   data: () => {
     return {
       singleProjectHeader: {
-        singleProjectTitle: 'Marketplace Engineer',
-        singleProjectDate: '2023-Present',
-        singleProjectTag: 'Full Stack'
+        singleProjectTitle: 'Eagle Scout',
+        singleProjectDate: '2012-Present',
+        singleProjectTag: 'Eagle Scout'
       },
       projectImages: [
         {
           id: 1,
-          title: 'MLS Listings',
-          img: kvCore1
+          title: 'Eagle',
+          img: eagleScout
         },
         {
           id: 2,
-          title: 'Marketplace products',
-          img: kvCore2
+          title: 'Scout',
+          img: eagleScout2
         },
         {
           id: 3,
-          title: 'KvCore login',
-          img: kvCoreLogin
+          title: 'BSA',
+          img: eagleScout3
         }
       ],
       projectInfo: {
@@ -51,41 +45,39 @@ export default {
           {
             id: 1,
             title: 'Name',
-            details: 'InsideRealEstate'
+            details: 'Boy Scouts of America'
           },
           {
             id: 2,
             title: 'Services',
-            details: 'Full Stack Engineer'
+            details: 'Eagle Scout - Order of the Arrow'
           },
           {
             id: 3,
             title: 'Website',
-            details: 'https://www.insiderealestate.com/'
+            details: 'https://www.scouting.org/'
           },
           {
             id: 4,
             title: 'Phone',
-            details: '801-424-0018'
+            details: '801-479-5460'
           }
         ],
         objectivesHeading: 'Objective',
         objectivesDetails:
-          'I joined the marketplace engineering team.  Our responsibilities revolve around upkeeping and designing products' +
-          'for our CRM customers.',
+          'I grew up in the scouting program, and sure, my parents may have made it a requirement to get a car. But that was' +
+          'just extra incentive.',
         technologies: [
           {
             title: 'Tools & Technologies',
             techs: [
-              'HTML',
-              'CSS',
-              'JavaScript',
-              'Vue.js',
-              'REST API',
-              'AWS',
-              'Laravel',
-              'Docker',
-              'NUXT'
+              'Survivalist',
+              'First Aid',
+              'Buchcrafting',
+              'Knot Tying',
+              'Hunting',
+              'Camping',
+              'Fishing',
             ]
           }
         ],
@@ -94,34 +86,18 @@ export default {
           {
             id: 1,
             details:
-              'The codebase is mature and has been touched by many developers over the years. While robust, understanding' +
-              "it in it's entirety is a challenge. Along with that, working directly in a customer facing environment" +
-              'has been a learning experience.  In the past, letting more technical issues bubble up to the top was ' +
-              'less of a problem since it would just end up in the org instead of the hands of a customer that will' +
-              'report it an an issue and potentially cost a subscription.'
+            'I was very fortunate growing up to have amazing scout leaders.  They took us on some of the most incredible ' +
+              'trips I still think about to this day. Also helps that I grew up in Utah, where cool adventures are only ' +
+              '1-3 hours away in any direction. Goblin Valley, Bryce, Zions, Escalante, the list never ends. Once a year' +
+              'we would do a week long campout somewhere amazing, and we would try to do an overnighter at least once a month'
           },
           {
             id: 2,
             details:
-              'The number of products is not substantial, but each is unique in special ways, and the data structure has been' +
-              'especially challenging.  More than anything, it has reall stretched my full-stack claims.  Asking some front' +
-              'end work one moment, back end work another, and then having a myriad of low level docker and environment issues' +
-              'to solve. All having a deadline and paying customers as the end users.'
-          },
-          {
-            id: 3,
-            details:
-              'Learning a new CMS, Storyblok, was another hurdle.  We were redesigning our Product Detail pages and were given' +
-              'massive Figma templates as a base and asked to incorporate it with this new CMS that the higher ups decided' +
-              'on using. The CMS itself is quite simple and functional, but the learning curve was a bit steep and documentation' +
-              'could be better on Storybloks end.  Having never worked with Figma as well, it took a bit of learning to unlock' +
-              'it\'s full potential as well.'
-          },
-          {
-            id: 4,
-            details:
-              'Thus far, IRE has been a challenging, but rewarding place to work.  Great co-workers and great attention paid to ' +
-              'things like the ticketing process are apreciated.'
+            'I will admit to procrastinating my eagle scout project, but in the end it was worth it.  We volunteered to' +
+              'repaint a US map and the playground lines at a local elementary school. We asked around and managed to get ' +
+              'all the different materials we needed donated from local businesses.  We had a great turnout and the school' +
+              'still has some of it left.  Although, a few younger siblings may have used the idea and touched it up over the years.'
           }
         ],
         socialSharingsHeading: 'Share This',
@@ -158,31 +134,6 @@ export default {
           }
         ]
       },
-      relatedProject: {
-        relatedProjectsHeading: 'Related Projects',
-        relatedProjects: [
-          {
-            id: 1,
-            title: 'Mobile UI',
-            img: otherProject1
-          },
-          {
-            id: 2,
-            title: 'Web Application',
-            img: otherProject2
-          },
-          {
-            id: 3,
-            title: 'UI Design',
-            img: otherProject3
-          },
-          {
-            id: 4,
-            title: 'Kabul Mobile App UI',
-            img: otherProject4
-          }
-        ]
-      }
     }
   },
   mounted() {
@@ -205,9 +156,6 @@ export default {
 
     <!-- Project information -->
     <ProjectInfo :projectInfo="projectInfo" />
-
-    <!-- Project related projects -->
-    <ProjectRelatedProjects :relatedProject="relatedProject" />
   </div>
 </template>
 

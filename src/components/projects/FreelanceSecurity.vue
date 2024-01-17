@@ -3,15 +3,10 @@ import feather from 'feather-icons'
 import ProjectHeader from './ProjectHeader.vue'
 import ProjectGallery from './ProjectGallery.vue'
 import ProjectInfo from './ProjectInfo.vue'
-import ProjectRelatedProjects from './ProjectRelatedProjects.vue'
 
 import anon from '@/assets/images/anon.png'
 import reportDemo from '@/assets/images/report-demo.png'
 import reportDemo2 from '@/assets/images/report-demo-2.png'
-import otherProject1 from '@/assets/images/mobile-project-1.jpg'
-import otherProject2 from '@/assets/images/web-project-1.jpg'
-import otherProject3 from '@/assets/images/ui-project-2.jpg'
-import otherProject4 from '@/assets/images/mobile-project-2.jpg'
 
 export default {
   name: 'freelancer-project',
@@ -19,7 +14,6 @@ export default {
     ProjectHeader,
     ProjectGallery,
     ProjectInfo,
-    ProjectRelatedProjects
   },
   data: () => {
     return {
@@ -31,17 +25,17 @@ export default {
       projectImages: [
         {
           id: 1,
-          title: 'MLS Listings',
+          title: 'anon',
           img: anon
         },
         {
           id: 2,
-          title: 'Marketplace products',
+          title: 'Report Demo',
           img: reportDemo
         },
         {
           id: 3,
-          title: 'KvCore login',
+          title: 'Yet Another Report Demo',
           img: reportDemo2
         }
       ],
@@ -153,31 +147,6 @@ export default {
           }
         ]
       },
-      relatedProject: {
-        relatedProjectsHeading: 'Related Projects',
-        relatedProjects: [
-          {
-            id: 1,
-            title: 'Mobile UI',
-            img: otherProject1
-          },
-          {
-            id: 2,
-            title: 'Web Application',
-            img: otherProject2
-          },
-          {
-            id: 3,
-            title: 'UI Design',
-            img: otherProject3
-          },
-          {
-            id: 4,
-            title: 'Kabul Mobile App UI',
-            img: otherProject4
-          }
-        ]
-      }
     }
   },
   mounted() {
@@ -200,9 +169,6 @@ export default {
 
     <!-- Project information -->
     <ProjectInfo :projectInfo="projectInfo" />
-
-    <!-- Project related projects -->
-    <ProjectRelatedProjects :relatedProject="relatedProject" />
   </div>
 </template>
 

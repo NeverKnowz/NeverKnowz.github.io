@@ -5,13 +5,9 @@ import ProjectGallery from './ProjectGallery.vue'
 import ProjectInfo from './ProjectInfo.vue'
 import ProjectRelatedProjects from './ProjectRelatedProjects.vue'
 
-import kvCore1 from '@/assets/images/KvCore-1.png'
+import gameJam from '@/assets/images/game-jam.png'
 import kvCore2 from '@/assets/images/Kv-Core-2.png'
 import kvCoreLogin from '@/assets/images/kvcore-login.png'
-import otherProject1 from '@/assets/images/mobile-project-1.jpg'
-import otherProject2 from '@/assets/images/web-project-1.jpg'
-import otherProject3 from '@/assets/images/ui-project-2.jpg'
-import otherProject4 from '@/assets/images/mobile-project-2.jpg'
 
 export default {
   name: 'game-jam-project',
@@ -19,20 +15,19 @@ export default {
     ProjectHeader,
     ProjectGallery,
     ProjectInfo,
-    ProjectRelatedProjects
   },
   data: () => {
     return {
       singleProjectHeader: {
-        singleProjectTitle: 'Marketplace Engineer',
-        singleProjectDate: '2023-Present',
+        singleProjectTitle: 'Game Developer/Musician',
+        singleProjectDate: '1994-Present',
         singleProjectTag: 'Full Stack'
       },
       projectImages: [
         {
           id: 1,
-          title: 'MLS Listings',
-          img: kvCore1
+          title: 'Project Aether',
+          img: gameJam
         },
         {
           id: 2,
@@ -51,7 +46,7 @@ export default {
           {
             id: 1,
             title: 'Name',
-            details: 'InsideRealEstate'
+            details: 'RuneWerkz Software'
           },
           {
             id: 2,
@@ -61,31 +56,27 @@ export default {
           {
             id: 3,
             title: 'Website',
-            details: 'https://www.insiderealestate.com/'
+            details: 'N/A...yet'
           },
           {
             id: 4,
             title: 'Phone',
-            details: '801-424-0018'
+            details: '385-414-5721'
           }
         ],
         objectivesHeading: 'Objective',
         objectivesDetails:
-          'I joined the marketplace engineering team.  Our responsibilities revolve around upkeeping and designing products' +
-          'for our CRM customers.',
+          'I was invited to participate in a game jam with a group of close friends. The objective was to make a game in' +
+          '24 hours, and the theme was traveling.',
         technologies: [
           {
             title: 'Tools & Technologies',
             techs: [
-              'HTML',
-              'CSS',
-              'JavaScript',
-              'Vue.js',
-              'REST API',
-              'AWS',
-              'Laravel',
-              'Docker',
-              'NUXT'
+              'Unity',
+              'C#',
+              'Ableton Pro',
+              'Adobe Audition',
+              'Yamaha PSR-SX900',
             ]
           }
         ],
@@ -94,22 +85,37 @@ export default {
           {
             id: 1,
             details:
-            ''
+            'Like most nerds, i\'ve always dreamed of opening my own game studio. From the early days on my parents carpet' +
+              'playing the Sega Genesis, I knew it was something I WANTED to do. The pragmatic part of my brain always kept' +
+              'me out of chasing it professionally though. The AAA industry space never really appealed to me outside of a ' +
+              'handful of examples. (Valve? Call me.) The loss of creative control is something that always worried me.'
           },
           {
             id: 2,
             details:
-            ''
+            'I decided ultimately to chase programming as a profession, since it\'s adjacent, and in my free time I could' +
+              'begin learning the other skills I would need.  Online resources are plentiful, and the amount of courses offered' +
+              'through sites like Udemy allowed me to get my feet wet and start working on little vertical slices of different' +
+              'game ideas I had. After a little while, I began to feel confident enough to play around with other game engines' +
+              'and familiarize myself with all aspects of game creation.'
           },
           {
             id: 3,
             details:
-            ''
+            'The game jam was a fun way of taking it all the way to it\'s conclusion.  It\'s easy to make a bunch of demos,' +
+              'it\'s much harder to finish a game.  Engineering wise, I took a backseat and let my friend take the lead.' +
+              'I wanted to focus on the music.  I\'ve played piano for most of my life, but sound design, mastering, ' +
+              'and all the other intricacies were new to me.  Realized pretty early on I bit off a lot. But I managed' +
+              'to chew through it and turn out something im proud of.'
           },
           {
             id: 4,
             details:
-            ''
+            'The game itself, is really simple. Top down "Fish.io" type game.  Eat smaller things, get bigger, don\'t get' +
+              'eaten by something bigger. You are a black hole, consuming smaller matter, growing bigger, until all' +
+              'matter is consumed and you implode into a new big bang. Birthing a new universe.  The music was meant to ' +
+              'start eerie, and end hopeful. But that end state never made it in the 24 hours we had.  It was a great experience' +
+              'and I look forward to more in the future.'
           }
         ],
         socialSharingsHeading: 'Share This',
@@ -146,31 +152,6 @@ export default {
           }
         ]
       },
-      relatedProject: {
-        relatedProjectsHeading: 'Related Projects',
-        relatedProjects: [
-          {
-            id: 1,
-            title: 'Mobile UI',
-            img: otherProject1
-          },
-          {
-            id: 2,
-            title: 'Web Application',
-            img: otherProject2
-          },
-          {
-            id: 3,
-            title: 'UI Design',
-            img: otherProject3
-          },
-          {
-            id: 4,
-            title: 'Kabul Mobile App UI',
-            img: otherProject4
-          }
-        ]
-      }
     }
   },
   mounted() {
@@ -179,7 +160,6 @@ export default {
   updated() {
     feather.replace()
   },
-  methods: {}
 }
 </script>
 
@@ -193,9 +173,6 @@ export default {
 
     <!-- Project information -->
     <ProjectInfo :projectInfo="projectInfo" />
-
-    <!-- Project related projects -->
-    <ProjectRelatedProjects :relatedProject="relatedProject" />
   </div>
 </template>
 
