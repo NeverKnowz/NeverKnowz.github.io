@@ -14,7 +14,7 @@ import otherProject3 from '@/assets/images/ui-project-2.jpg'
 import otherProject4 from '@/assets/images/mobile-project-2.jpg'
 
 export default {
-  name: 'kvcore-project',
+  name: 'eagle-scout-project',
   components: {
     ProjectHeader,
     ProjectGallery,
@@ -25,7 +25,7 @@ export default {
     return {
       singleProjectHeader: {
         singleProjectTitle: 'Marketplace Engineer',
-        singleProjectDate: '2023-2024',
+        singleProjectDate: '2023-Present',
         singleProjectTag: 'Full Stack'
       },
       projectImages: [

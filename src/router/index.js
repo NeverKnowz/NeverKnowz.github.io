@@ -77,6 +77,42 @@ const routes = [
     meta: {
       title: 'Brady - KvCore'
     }
+  },
+  {
+    path: '/projects/freelance',
+    name: 'Freelance Security',
+    // route level code-splitting
+    // this generates a separate chunk (projects.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "projects" */ '../components/projects/FreelanceSecurity.vue'),
+    meta: {
+      title: 'Brady - Freelancer'
+    }
+  },
+  {
+    path: '/projects/game-jam',
+    name: 'Game Jam',
+    // route level code-splitting
+    // this generates a separate chunk (projects.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "projects" */ '../components/projects/GameJam.vue'),
+    meta: {
+      title: 'Brady - Game Jam'
+    }
+  },
+  {
+    path: '/projects/eagle-scout',
+    name: 'Eagle Scout',
+    // route level code-splitting
+    // this generates a separate chunk (projects.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () =>
+      import(/* webpackChunkName: "projects" */ '../components/projects/EagleScout.vue'),
+    meta: {
+      title: 'Brady - Eagle Scout'
+    }
   }
 ]
 

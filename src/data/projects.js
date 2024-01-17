@@ -1,5 +1,3 @@
-// Projects data.
-// Note: Here we are getting data from a js file, but in a different project I'll be fetching these projects from some srt of APIs.
 import hsihero from '@/assets/images/hsi-hero.png'
 import kvcore from '@/assets/images/kvcore-login.png'
 import cbpkanon from '@/assets/images/cbpk-anon.png'
@@ -24,21 +22,21 @@ const projects = [
     id: 3,
     title: 'Freelance Security Analyst',
     category: 'Information Security/Hacking',
-    route: '/projects/single-project/highspeedinternet',
+    route: '/projects/freelance',
     img: cbpkanon
   },
   {
     id: 4,
     title: 'Game Jam',
     category: 'Game Development',
-    route: '/projects/single-project/highspeedinternet',
+    route: '/projects/-project/game-jam',
     img: blackhole
   },
   {
     id: 5,
     title: 'Eagle Scout',
     category: 'Earned 2012',
-    route: '/projects/single-project/highspeedinternet',
+    route: '/projects/single-project/eagle-scout',
     img: eagle
   }
 ]

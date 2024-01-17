@@ -14,7 +14,7 @@ import otherProject3 from '@/assets/images/ui-project-2.jpg'
 import otherProject4 from '@/assets/images/mobile-project-2.jpg'
 
 export default {
-  name: 'Projects',
+  name: 'his-project',
   components: {
     ProjectHeader,
     ProjectGallery,

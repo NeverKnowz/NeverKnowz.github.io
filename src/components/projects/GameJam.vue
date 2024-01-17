@@ -14,7 +14,7 @@ import otherProject3 from '@/assets/images/ui-project-2.jpg'
 import otherProject4 from '@/assets/images/mobile-project-2.jpg'
 
 export default {
-  name: 'kvcore-project',
+  name: 'game-jam-project',
   components: {
     ProjectHeader,
     ProjectGallery,
@@ -25,7 +25,7 @@ export default {
     return {
       singleProjectHeader: {
         singleProjectTitle: 'Marketplace Engineer',
-        singleProjectDate: '2023-2024',
+        singleProjectDate: '2023-Present',
         singleProjectTag: 'Full Stack'
       },
       projectImages: [
@@ -94,34 +94,22 @@ export default {
           {
             id: 1,
             details:
-              'The codebase is mature and has been touched by many developers over the years. While robust, understanding' +
-              "it in it's entirety is a challenge. Along with that, working directly in a customer facing environment" +
-              'has been a learning experience.  In the past, letting more technical issues bubble up to the top was ' +
-              'less of a problem since it would just end up in the org instead of the hands of a customer that will' +
-              'report it an an issue and potentially cost a subscription.'
+            ''
           },
           {
             id: 2,
             details:
-              'The number of products is not substantial, but each is unique in special ways, and the data structure has been' +
-              'especially challenging.  More than anything, it has reall stretched my full-stack claims.  Asking some front' +
-              'end work one moment, back end work another, and then having a myriad of low level docker and environment issues' +
-              'to solve. All having a deadline and paying customers as the end users.'
+            ''
           },
           {
             id: 3,
             details:
-              'Learning a new CMS, Storyblok, was another hurdle.  We were redesigning our Product Detail pages and were given' +
-              'massive Figma templates as a base and asked to incorporate it with this new CMS that the higher ups decided' +
-              'on using. The CMS itself is quite simple and functional, but the learning curve was a bit steep and documentation' +
-              'could be better on Storybloks end.  Having never worked with Figma as well, it took a bit of learning to unlock' +
-              'it\'s full potential as well.'
+            ''
           },
           {
             id: 4,
             details:
-              'Thus far, IRE has been a challenging, but rewarding place to work.  Great co-workers and great attention paid to ' +
-              'things like the ticketing process are apreciated.'
+            ''
           }
         ],
         socialSharingsHeading: 'Share This',

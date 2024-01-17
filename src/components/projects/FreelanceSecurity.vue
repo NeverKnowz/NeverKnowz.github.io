@@ -5,16 +5,16 @@ import ProjectGallery from './ProjectGallery.vue'
 import ProjectInfo from './ProjectInfo.vue'
 import ProjectRelatedProjects from './ProjectRelatedProjects.vue'
 
-import kvCore1 from '@/assets/images/KvCore-1.png'
-import kvCore2 from '@/assets/images/Kv-Core-2.png'
-import kvCoreLogin from '@/assets/images/kvcore-login.png'
+import anon from '@/assets/images/anon.png'
+import reportDemo from '@/assets/images/report-demo.png'
+import reportDemo2 from '@/assets/images/report-demo-2.png'
 import otherProject1 from '@/assets/images/mobile-project-1.jpg'
 import otherProject2 from '@/assets/images/web-project-1.jpg'
 import otherProject3 from '@/assets/images/ui-project-2.jpg'
 import otherProject4 from '@/assets/images/mobile-project-2.jpg'
 
 export default {
-  name: 'kvcore-project',
+  name: 'freelancer-project',
   components: {
     ProjectHeader,
     ProjectGallery,
@@ -24,25 +24,25 @@ export default {
   data: () => {
     return {
       singleProjectHeader: {
-        singleProjectTitle: 'Marketplace Engineer',
-        singleProjectDate: '2023-2024',
-        singleProjectTag: 'Full Stack'
+        singleProjectTitle: 'Freelance Security Analyst',
+        singleProjectDate: '2023-Present',
+        singleProjectTag: 'Security'
       },
       projectImages: [
         {
           id: 1,
           title: 'MLS Listings',
-          img: kvCore1
+          img: anon
         },
         {
           id: 2,
           title: 'Marketplace products',
-          img: kvCore2
+          img: reportDemo
         },
         {
           id: 3,
           title: 'KvCore login',
-          img: kvCoreLogin
+          img: reportDemo2
         }
       ],
       projectInfo: {
@@ -51,41 +51,38 @@ export default {
           {
             id: 1,
             title: 'Name',
-            details: 'InsideRealEstate'
+            details: 'RuneWerkz Security'
           },
           {
             id: 2,
             title: 'Services',
-            details: 'Full Stack Engineer'
+            details: 'Penetration Testing, Reporting.'
           },
           {
             id: 3,
             title: 'Website',
-            details: 'https://www.insiderealestate.com/'
+            details: 'N/A'
           },
           {
             id: 4,
             title: 'Phone',
-            details: '801-424-0018'
+            details: 'N/A'
           }
         ],
         objectivesHeading: 'Objective',
         objectivesDetails:
-          'I joined the marketplace engineering team.  Our responsibilities revolve around upkeeping and designing products' +
-          'for our CRM customers.',
+          'I offered security auditing for small-medium sized businesses that otherwise couldn\'t afford it.',
         technologies: [
           {
             title: 'Tools & Technologies',
             techs: [
-              'HTML',
-              'CSS',
-              'JavaScript',
-              'Vue.js',
-              'REST API',
-              'AWS',
-              'Laravel',
-              'Docker',
-              'NUXT'
+              'Kali',
+              'BurpSuite',
+              'Nmap',
+              'OWASP ZAP',
+              'CIS Compliance Standards',
+              'PCI Compliance Standards',
+              'HIPPA Compliance Standards',
             ]
           }
         ],
@@ -94,34 +91,32 @@ export default {
           {
             id: 1,
             details:
-              'The codebase is mature and has been touched by many developers over the years. While robust, understanding' +
-              "it in it's entirety is a challenge. Along with that, working directly in a customer facing environment" +
-              'has been a learning experience.  In the past, letting more technical issues bubble up to the top was ' +
-              'less of a problem since it would just end up in the org instead of the hands of a customer that will' +
-              'report it an an issue and potentially cost a subscription.'
+              'Security is important, and only getting more-so every year.  The amount of attacks and breaches both increase' +
+              'every year, and many small-medium sized companies simply do not have the resources to dedicate to it. So' +
+              'I offered a robust package that includes training materials and a detailed report with action plans. During this time' +
+              'I performed multiple audits on a wide variety of tech stacks.  Wordpress was the major one I encountered, ' +
+              'but the medium sized businesses had a lot of custom systems that needed special attention.'
           },
           {
             id: 2,
             details:
-              'The number of products is not substantial, but each is unique in special ways, and the data structure has been' +
-              'especially challenging.  More than anything, it has reall stretched my full-stack claims.  Asking some front' +
-              'end work one moment, back end work another, and then having a myriad of low level docker and environment issues' +
-              'to solve. All having a deadline and paying customers as the end users.'
+              'I really enjoyed presenting to the teams and being able to be present to answer any questions they had,' +
+              'and a lot came up.  People are curious and most never have the opportunity to speak to a "Hacker" directly.' +
+              'It also gives me the chance to stress that their personal security is at risk, just as much as the companies.' +
+              'It\'s in everyones best interest to be security minded.  A breach affects the entire company.'
           },
           {
             id: 3,
             details:
-              'Learning a new CMS, Storyblok, was another hurdle.  We were redesigning our Product Detail pages and were given' +
-              'massive Figma templates as a base and asked to incorporate it with this new CMS that the higher ups decided' +
-              'on using. The CMS itself is quite simple and functional, but the learning curve was a bit steep and documentation' +
-              'could be better on Storybloks end.  Having never worked with Figma as well, it took a bit of learning to unlock' +
-              'it\'s full potential as well.'
+              'The physical side of security is often overlooked by management, even though it\'s by far the most important.' +
+              'Why would I hack your stuff, when I can just sneak in?  I focus on the physical security of the office just as much' +
+              'as the digital, and I tend to find a good number of things that can be addressed.'
           },
           {
             id: 4,
             details:
-              'Thus far, IRE has been a challenging, but rewarding place to work.  Great co-workers and great attention paid to ' +
-              'things like the ticketing process are apreciated.'
+              'Security is truly a passion of mine.  It\'s always been just ONE of the hats I wear, but any opportunity that comes' +
+              'along to chase it full time and give it the dedication it needs, would be amazing.'
           }
         ],
         socialSharingsHeading: 'Share This',
